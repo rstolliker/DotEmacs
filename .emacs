@@ -38,6 +38,7 @@
 		    intero
 		    irony
 		    company-irony
+		    neotree
 		    ))
 
 ; fetch the list of packages available 
