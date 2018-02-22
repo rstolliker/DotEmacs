@@ -95,3 +95,8 @@
 ;; Neotree options
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
+
+;; cider figwheel repl config
+;; for other solutions see https://github.com/clojure-emacs/cider/blob/master/doc/up_and_running.md
+(setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
+
