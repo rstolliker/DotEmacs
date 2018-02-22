@@ -100,3 +100,6 @@
 ;; for other solutions see https://github.com/clojure-emacs/cider/blob/master/doc/up_and_running.md
 (setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api) (start-figwheel!) (cljs-repl))")
 
+;; auto reloads on change
+(global-auto-revert-mode t)
+
