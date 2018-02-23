@@ -38,7 +38,7 @@
 		    intero
 		    irony
 		    company-irony
-		    all-the-icons
+		    ;;all-the-icons
 		    neotree
 		    ))
 
