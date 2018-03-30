@@ -38,6 +38,7 @@
 		    company-irony
 		    ;;all-the-icons
 		    neotree
+		    rainbow-delimiters
 		    ))
 
 ; fetch the list of packages available 
@@ -53,7 +54,7 @@
 ;; Set auto pair
 (electric-pair-mode 1)
 
-;; Matching parens
+;; Show Matching parens
 (show-paren-mode 1)
 
 ;; Company mode hook for all
@@ -100,3 +101,8 @@
 
 ;; auto reloads on change
 (global-auto-revert-mode t)
+
+;; rainbow delimiters hooks
+;;(add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
+;;(add-hook 'lisp-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
