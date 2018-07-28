@@ -78,8 +78,8 @@
 (setq inferior-lisp-program "c:/cygwin64/bin/clisp.exe")
 
 ;; intero
-;;(add-hook 'haskell-mode-hook 'intero-mode)
-(intero-global-mode 1)
+(add-hook 'haskell-mode-hook 'intero-mode)
+;;(intero-global-mode 1)
 
 ;; irony
 ;; requires libclang and cmake
@@ -106,3 +106,7 @@
 ;;(add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
 ;;(add-hook 'lisp-mode-hook #'rainbow-delimiters-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
+
+;; Auto Save and Backup Directory
+(setq backup-directory-alist
+	`(("." . ,(concat user-emacs-directory "backups"))))
