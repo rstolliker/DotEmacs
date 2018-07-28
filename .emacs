@@ -39,6 +39,7 @@
 		    ;;all-the-icons
 		    neotree
 		    rainbow-delimiters
+				magit
 		    ))
 
 ; fetch the list of packages available 
