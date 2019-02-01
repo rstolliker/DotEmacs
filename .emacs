@@ -167,10 +167,6 @@
 (global-set-key (kbd "<C-return>") 'end-of-line-and-indented-new-line)
 
 ;; Split windows horizontally
-(setq split-width-threshold 999999)
-(defun split-horizontally-for-temp-buffers ()
-   "Split the window horizontally for temp buffers."
-   (when (and (one-window-p t)
-	 (not (active-minibuffer-window)))
-     (split-window-horizontally)))    
-(add-hook 'temp-buffer-setup-hook 'split-horizontally-for-temp-buffers)
+(setq split-height-threshold nil)
+(setq split-width-threshold 0)
+
