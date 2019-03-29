@@ -98,7 +98,7 @@
 
 (use-package neotree
   :defer t
-  :bind ([f8] . neotree))
+  :bind ([f8] . neotree-toggle))
 
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
