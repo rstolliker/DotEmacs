@@ -85,10 +85,6 @@
   :init
   (add-to-list 'company-backends 'company-anaconda))
 
-(use-package intero
-  :defer t
-  :hook (haskell-mode . intero-mode))
-
 (use-package irony
   :defer t
   :hook (((c++-mode c-mode objc-mode) . irony-mode)
